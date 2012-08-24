@@ -20,6 +20,7 @@
   
   <!-- Included CSS Files (Compressed) -->
   <link rel="stylesheet" href="stylesheets/foundation.min.css">
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.20/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="stylesheets/app.css">
 
   <script src="javascripts/modernizr.foundation.js"></script>
@@ -82,6 +83,14 @@
         </div>
       </div>
       
+      <div class="row">
+        <div class="twelve columns">
+          <h3>jQuery UI Datepicker</h3>
+          <form>
+            <input type="text" class="four date">
+          </form>
+        </div>
+      </div>
       
       <h3>Tabs</h3>
       <dl class="tabs">
@@ -194,8 +203,14 @@
   
   <!-- Included JS Files (Compressed) -->
   <script src="javascripts/foundation.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
   
   <!-- Initialize JS Plugins -->
   <script src="javascripts/app.js"></script>
+  <script>
+    $(function(){
+      $(".date").datepicker();
+    });
+  </script>
 </body>
 </html>
