@@ -39,6 +39,20 @@
       <hr />
     </div>
   </div>
+  
+  <div class="row">
+    <h3>Custom Forms Programmatic Updates</h3>
+    <div class="twelve columns">
+      <form class="custom">
+        <select id="customSelect1">
+          <option selected>Value 1</option>
+          <option>Value 2</option>
+          <option>Value 3</option>
+        </select>
+      </form>
+      <a href="#" id="clickToChange">Click to change to "Value 3"</a>
+    </div>
+  </div>
 
   <div class="row">
     <div class="eight columns">
@@ -196,6 +210,14 @@
   
   <!-- Initialize JS Plugins -->
   <script src="javascripts/app.js"></script>
+  <script>
+    $("#clickToChange").on("click", function(event){
+      event.preventDefault();
+      $("#customSelect1")[0].selectedIndex=2;
+      // Trigger a change so custom forms will pick it up
+      $("#customSelect1").trigger("change");
+    });
+  </script>
   </script>
 </body>
 </html>
