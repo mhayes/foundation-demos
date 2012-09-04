@@ -4,8 +4,7 @@
    Table of Contents
 -----------------------------------------------------
 :: Shared Styles
-:: Page Name 1
-:: Page Name 2
+:: Foundation Overrides
 */
 
 
@@ -14,16 +13,15 @@
 ----------------------------------------- */
 
 
-
 /* -----------------------------------------
-   Page Name 1
+   Foundation Overrides
 ----------------------------------------- */
 
-
-
-
-/* -----------------------------------------
-   Page Name 2
------------------------------------------ */
-
-
+div.orbit-wrapper div.slider-nav span.left,
+div.orbit-wrapper div.slider-nav span.right {
+  background:none;
+  height:100%;
+  margin-top:0;
+  top:0;
+  width:50%;
+}
